@@ -101,22 +101,6 @@ class _AppointmentsState extends State<Appointments> {
                 itemCount: data == null ? 0 : data.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
-                      
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Text('Status: '),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text(data[index]['approved'] == "0"
-                                  ? 'Not approved'
-                                  : 'Approved'),
-//                              SizedBox(width: 5,),
-                              MaterialButton(
-                                  child: Text(data[index]['approved'] == "0"
-                                      ? "Cancel"
-                                      : ""),
                                   onPressed: () => confirmCancel(
                                         data[index]['id'],
                                       )),
