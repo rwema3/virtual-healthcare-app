@@ -37,14 +37,6 @@ class Home extends StatelessWidget {
             ),
 //            RaisedButton(child: Text('Doctor Sign in'),),
 //            RaisedButton(child: Text('Patient Sign in'),)
-            
-                  },
-                  minWidth: 300.0,
-                  height: 42.0,
-                  child: Text(
-                    'Patient sign in',
-                    style: TextStyle(color: Colors.white),
-                  ),
                 ),
               ),
             ),
