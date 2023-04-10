@@ -115,7 +115,15 @@ class _AppointmentsState extends State<Appointments> {
                             'Doctor\'s name:  ' + data[index]['doctor'],
                             style: TextStyle(fontSize: 20),
                           ),
-                       
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text('Appointment Date:  ' +
+                              DateTime.parse(data[index]['appointment_date'])
+                                  .toString()),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
