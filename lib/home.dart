@@ -45,17 +45,7 @@ class Home extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
                 child: MaterialButton(
                   onPressed: () async {
-                    final SharedPreferences prefs = await SharedPreferences
-                        .getInstance();
-                    String token = prefs.getString('token');
-                    if (token == null) {
-                      Navigator
-                          .pushNamed(context, '/patient-login');
-                    } else {
-                      Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (BuildContext context) => Account(),
-                      ),);
-                    }
+                 
                   },
                   minWidth: 300.0,
                   height: 42.0,
