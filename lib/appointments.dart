@@ -101,7 +101,21 @@ class _AppointmentsState extends State<Appointments> {
                 itemCount: data == null ? 0 : data.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
-                      
+                      color: Colors.blue[100],
+                      margin: EdgeInsets.all(20),
+                      elevation: 4,
+//                      height: 120,
+//                      padding: EdgeInsets.all(5),
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            'Doctor\'s name:  ' + data[index]['doctor'],
+                            style: TextStyle(fontSize: 20),
+                          ),
+                       
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
