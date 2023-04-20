@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+        color: colour,
         borderRadius: BorderRadius.circular(30.0),
         child: MaterialButton(
           onPressed: onPressed,
