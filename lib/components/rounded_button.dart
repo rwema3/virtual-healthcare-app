@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+        child: MaterialButton(
           onPressed: onPressed,
           minWidth: 200.0,
           height: 42.0,
