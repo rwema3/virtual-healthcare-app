@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+  final String title;
   final Function onPressed;
 
   @override
