@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {
